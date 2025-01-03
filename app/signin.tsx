@@ -22,7 +22,7 @@ const signin = () => {
   const handleLogin = async () => {
     const result = await login();
     if (result) {
-      refetch;
+      await refetch({});
     } else {
       Alert.alert("Failed to Login");
     }

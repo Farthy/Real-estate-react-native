@@ -4,8 +4,16 @@ import { Text, StyleSheet, View } from "react-native";
 
 const index = () => {
   return (
-    <View>
-      <Text className="font-bold text-xl my-10">WElcome to Restate</Text>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Text className="font-bold text-3xl my-10 font-rubik">
+        WElcome to Restate
+      </Text>
       <Link href="/signin"> SignIn</Link>
       <Link href="/explore"> Explore</Link>
       <Link href="/Profile"> Profile</Link>

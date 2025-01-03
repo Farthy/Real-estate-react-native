@@ -12,12 +12,8 @@ const index = () => {
       }}
     >
       <Text className="font-bold text-3xl my-10 font-rubik">
-        WElcome to Restate
+        Welcome to Restate
       </Text>
-      <Link href="/signin"> SignIn</Link>
-      <Link href="/explore"> Explore</Link>
-      <Link href="/Profile"> Profile</Link>
-      <Link href="/properties/1"> Properties</Link>
     </View>
   );
 };

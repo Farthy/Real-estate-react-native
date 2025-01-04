@@ -3,6 +3,7 @@ import icons from "@/constants/icons";
 import images from "@/constants/images";
 import { logout } from "@/lib/appwrite";
 import { useGlobalContext } from "@/lib/global-provider";
+import seed from "@/lib/seed";
 import React from "react";
 import {
   Text,
@@ -13,6 +14,7 @@ import {
   TouchableOpacity,
   ImageSourcePropType,
   Alert,
+  Button,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -63,7 +65,6 @@ const Profile = () => {
           <Text className="text-xl font-rubik-bold">Profile</Text>
           <Image source={icons.bell} className="size-5" />
         </View>
-
         <View className="flex-row justify-center flex mt-5">
           <View className="flex flex-col items-center relative mt-5">
             <Image
@@ -76,6 +77,7 @@ const Profile = () => {
             <Text className="text-2xl font-rubik mt-2">{user?.name}</Text>
           </View>
         </View>
+
         <View className="flex flex-col mt-10">
           <SettingsItem icon={icons.calendar} title={"My Bookings"} />
           <SettingsItem icon={icons.wallet} title={"Payments"} />

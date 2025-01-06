@@ -41,7 +41,7 @@ const Home = () => {
     params: {
       filter: params.filter!,
       query: params.query!,
-      limit: 6,
+      limit: 8,
     },
     skip: true,
   });
